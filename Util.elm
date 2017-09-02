@@ -12,3 +12,8 @@ caseStr a = case a of
         1 -> "hello"
         2 -> "world"
         _ -> "none"
+type Answer =   YES|NO
+respond : Answer -> String
+respond answer = case answer of
+              YES -> "the response is yes"
+              NO -> "the response is no"
