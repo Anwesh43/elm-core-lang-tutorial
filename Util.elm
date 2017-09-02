@@ -18,3 +18,6 @@ respond answer = case answer of
               YES -> "the response is yes"
               NO -> "the response is no"
               OTHER resp-> "answer is " ++ " "++resp
+type alias Person = {age:Int,name:String}
+getPersonString : Person -> String
+getPersonString person = (.name person)++" is "++(toString (.age person))++" years old"
