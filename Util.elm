@@ -7,3 +7,8 @@ operate : (Int -> Int) -> Int -> Int
 operate fn a = fn a
 lenstring : String -> Int
 lenstring str = String.length str
+caseStr : Int -> String
+caseStr a = case a of
+        1 -> "hello"
+        2 -> "world"
+        _ -> "none"
